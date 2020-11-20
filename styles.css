@@ -1,0 +1,139 @@
+body {
+  background-color: #19A1AD;
+  font-family: "Kumbh Sans";
+  animation: colorchange 10s linear 1s infinite;
+}
+
+td, .card {
+  transition: transform 1s ease;
+}
+
+td:hover {
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
+
+.card:hover, .profile-img:hover {
+  transform: scale(1.07);
+}
+
+.bold-text {
+  font-weight: bolder;
+  color: #2D3247;
+}
+
+.semibold-text {
+  font-weight: 400;
+  color: #6A6F81;
+}
+
+.bg-txt {
+  font-size: 1.1rem;
+}
+
+.md-txt {
+  font-size: 0.9rem;
+}
+
+.sm-txt {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+}
+
+.line {
+  color: #969696;
+  opacity: 0.4;
+}
+
+.content {
+  background-image: url("images/bg-pattern-bottom.svg"), url("images/bg-pattern-top.svg");
+  background-position: 50rem 22.5rem, -30rem -42.5rem;
+  background-repeat: no-repeat;
+  background-size: 60%, 80%;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  top: 11rem;
+}
+
+.card {
+  border-radius: 15px;
+  height: 23.5rem;
+  width: 22rem;
+  margin: 0 auto;
+  background-color: white;
+  -webkit-box-shadow: 0 20px 45px 5px rgba(45, 50, 71, 0.35);
+  box-shadow: 0 20px 45px 5px rgba(45, 50, 71, 0.35);
+  text-align: center;
+}
+
+.card-top {
+  background-image: url("images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 1.2rem 0;
+  border-radius: 15px 15px 0 0;
+}
+
+.profile-img {
+  border-radius: 100%;
+  border: 5px solid white;
+  margin: 0 auto;
+  width: 27%;
+  position: relative;
+  top: 4.5rem;
+  transition: transform 1s ease;
+}
+
+.card-body {
+  margin-top: 4rem;
+  line-height: 1.5;
+  padding: 0 7rem 1.2rem;
+}
+
+.td1 {
+  padding: 0 3rem;
+}
+
+.card-footer {
+  padding: 1rem;
+}
+
+.table {
+  margin: 0 auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3E52A3;
+}
+
+@keyframes colorchange {
+  0% {
+    background: #19A1AD;
+  }
+
+  25% {
+    background: #F2E5CA;
+  }
+
+  50% {
+    background: #FAAA0A;
+  }
+
+  75% {
+    background: #FA543C;
+  }
+
+  100% {
+    background: #19A1AD;
+  }
+}
